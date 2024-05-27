@@ -1,0 +1,92 @@
+/* h1 {
+    color: rgb(173, 34, 34);
+    font-size: 30px ;
+} */
+/* cách gọi trên là css selectors  */
+/* select ID */
+#grad{
+    background-image: linear-gradient(to right, red, yellow);
+}
+#test_CSS_selectors1{
+    color: black;
+    font-size: 30px ;
+}
+/* select class */
+.test_CSS_selectors2{
+    color: blue;
+    font-size: 30px ;
+}
+/* class1.class2 */
+.one.two{
+    color: green;
+    font-size: 30px ;
+}
+/* class1 . class2 */
+.parent .child{
+    color: yellow;
+    font-size: 30px ;
+}
+/* * */
+*{
+    margin : 0;
+    padding : 0;
+    /* box-sizing: border-box; */
+}
+/* element */
+h2{
+    color: rgb(89, 29, 134);
+    font-size: 30px ;
+}
+/* element.class */
+/* h3.test_CSS_selectors2{
+    color: rgb(79, 77, 80);
+    font-size: 30px ;
+} */
+
+/* element,element */
+.test_CSS_selectors2,.test_CSS_selectors3{
+    color: red;
+}
+.aa{
+    font-style: italic;
+}
+.bb{
+    text-decoration: underline;
+}
+
+/* element > element */
+.parent > .child{
+    color: orange;
+    font-size: 30px ;
+}
+
+/* element + element */
+.element + .element{
+    color: purple;
+    font-size: 25px ;
+}
+
+/* element ~ element */
+/* .e~e ~ .e~e {
+    color: pink;
+    font-size: 25px ;
+} */
+
+/* VARIABLE */
+/* đặt root là kiểu global */
+:root{  
+    --text_color: red;
+}
+h1{
+    color: var(--text_color);
+}
+h1{
+    /* sử dụng kiểu này là local */
+    --my_color: green;
+    color: var(--my_color);
+}
+.box:hover{
+    background-color: rgb(233, 226, 226);
+}
+
+
