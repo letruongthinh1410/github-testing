@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!-- 
+    1. h1 - h6 - heading : thẻ h 
+    2. p - paragraph : đoạn văn
+    3. img - image : hình ảnh
+    4. a - anchor : liên kết
+    5. ul,li - unordered list, list item : danh sách không sắp xếp
+    6. table, tr, td - bảng, hàng, ô : bảng
+    7.input - nhập liệu
+    8.button - nút
+    9.div - division : phân chia
+-->
+<html>
+    <!-- Phần đầu -->
+    <head>
+        <title>Hoc HTML-CSS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+
+        <!-- INTERNAL -->
+        <!-- <style>
+            h1 {
+                color: rgb(173, 34, 34);
+                font-size: 30px ;
+            }
+        </style> -->
+    <!-- linear gradian -->
+    <!-- <style>
+        .box {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(45deg, red, yellow);
+        }
+    </style> -->
+       
+    <!-- lớp giả -->
+    <!-- trường hợp cần nối thêm dấu "(" thì mới sử dụng "" -->
+    <!-- <style>
+        .box {
+            width: 100%;
+            height: 100px;
+            background: rgb(1,1,2)
+        }
+        a::after{
+            content : "("attr(href)")";
+        }
+        .box::after{
+            content : attr(data-title);
+        }
+        .box:hover{
+            background-color: #116;
+        }
+        .box:active{
+            background-color: #116;
+        }
+        
+        h1:hover{ 
+            color: red;
+        }
+        li:first-child{
+            color: red;
+        }
+        li:last-child{
+            color: rgb(8, 57, 141);
+        }
+    </style>
+    -->
+
+    <!-- Phần tử giả -->
+    <!-- <style>
+        .box {
+            width: 50vw;
+            height: 100px;
+            background: rgb(1,1,2)
+            
+        }
+        .box::before{
+            content:"Trước";
+            color: red;
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: #fff   ;
+        }
+        .box::after{
+            content:"Sau";
+            color: red;
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: #fff   ;
+        }
+        h1::first-letter{
+            color: red;
+            font-size: 50px;
+        }
+        h1::first-line{
+            color: red;
+            font-size: 50px;
+        }
+        h1::selection{
+            background-color: yellow;
+            color: black;
+        }
+    </style> -->
+
+    <!-- PADDING-->
+    <!-- <style>
+        .box {
+            width: 60px;
+            height: 60px;
+            color: white;
+            display: flex;
+            background-color: red;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+    </style> -->
+
+    <!-- BORDER -->
+      <!-- <style>
+        .box {
+            width: 60px;
+            height: 60px;
+            color: white;
+            display: flex;
+            background-color: red;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border-width: 10px;
+            border-color: black;
+            border-style: solid;w
+            margin: 10px;
+            background-color: rgb(81, 81, 114);
+            background-clip :content-box;
+           
+        }
+    </style> -->
+
+    <!-- background image --> 
+    <!-- <style>
+        .headerr{
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-origin: content-box;
+            background-position: center;
+        }
+       
+    </style> -->
+
+    <!-- <style>
+        .box
+        {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+        }
+        .box-child
+        {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            
+        }
+    </style> -->
+
+    <style>
+        #header {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100vw;
+            height: 5vh;
+            position: fixed;
+            top : 0;
+        }
+        ul{
+            height: 2000px;
+        }
+        #liudiu{
+            margin-top: 50px;
+        }
+
+    </style>
+    
+
+
+
+    </head>
+    <!-- Phần thân -->
+    <body>
+        <!-- attr -->
+        <!-- <p>Học lập trình<a href="https://fullstack.edu.vn"></a>
+        </p> -->
+        <div class="box" data-title = "helllllllo"> 
+            <div class="box-child">
+
+            </div>
+        </div>
+        
+
+
+
+        <!-- title bên dưới là thuộc tính của HTML nằm trong thẻ mở-->
+        <!-- INLINE- là cái attribute bên dưới - "style" -->
+        <div class= "headerr"></div>
+        <h1 id="header" style="color:blue;" font >Hơn 11.000 câu hỏi gửi tới Diễn đàn Tiếng nói tuổi trẻ - Hành động của Đoàn</h1>
+        
+        <!-- select ID -->
+        <!-- <h1 id="test_CSS_selectors1"> CSS selectors</h1> -->
+        
+        <!-- select class -->
+        <!-- <h1 class="test_CSS_selectors2"> CSS selectors</h1>
+        <h1 class="test_CSS_selectors2"> CSS selectors class</h1>
+        <h2 class="test_CSS_selectors2"> CSS selectors class</h2> -->
+       
+        <!-- class1.class2 -->
+        <!-- <h1 class="one two"> CSS selectors class1.class2</h1>
+        <h1 class="two one"> CSS selectors class1.class2</h1> -->
+
+        <!-- class1 .class2 -->
+        <!-- <div class="parent">
+            <h1 class="child"> CSS selectors class1 .class2</h1>
+        </div> -->
+
+        <!-- element -->
+        <!-- <h2>CSS selectors element</h2>
+         -->
+
+        <!-- element.class -->
+        <!-- <h3 class="test_CSS_selectors"> CSS selectors element.class</h3> 
+        <h3 class="test_CSS_selectors2"> CSS selectors element.class</h3> 
+        <h3 class="test_CSS_selectors2"> CSS selectors element.class</h3> -->
+
+        <!-- element,element -->
+        <!-- <h3 class="test_CSS_selectors2 aa"> CSS selectors element,element</h3> 
+        <h3 class="test_CSS_selectors3 bb"> CSS selectors element,element</h3>
+         -->
+
+        <!-- element > element -->
+        <!-- <div class="parent">
+            <h2 class="child"> CSS selectors element > element</h2>
+        </div> -->
+
+        <!-- element + element -->
+        <!-- <h1 class="element">CSS selectors element + element</h1>
+        <h2 class="element">CSS selectors element + element</h2>
+        <h3 class="element">CSS selectors element + element</h3>
+        <h3></h3>
+        <h4 class="element">CSS selectors element + element</h4>
+        -->
+        
+        <!-- element ~ element -->
+        <!-- <h1 class="e~e">CSS selectors element ~ element</h1>
+        <h1 class="hihi"></h1>
+        <h2 class="e~e">CSS selectors element ~ element</h2>
+        <h2 class="e~e">CSS selectors element ~ element</h2>
+        <h2 class="e~e">CSS selectors element ~ element</h2> -->
+
+        
+        <div id="liudiu">
+            <input type="checkbox">
+            <input name="gender" type="radio">
+            <input name="gender" type="radio">
+            <input name="gender" type="radio">
+            <!-- thẻ button -->
+            <button> Đăng ký</button>
+           
+            <p>Vào 14 giờ chiều nay (14.3), T.Ư Đoàn tổ chức diễn ra diễn đàn "Tiếng nói tuổi trẻ - Hành động của Đoàn", với chủ đề "Sáng mãi con đường cách mạng của thanh niên" nhân kỷ niệm 93 năm Ngày thành lập Đoàn (26.3.1931 - 26.3.2024).</p>
+        </div>
+        <!--thẻ input -->
+       
+        <img src="data:image/png;base64,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" alt="Dân Trí">
+        <a href="https://dantri.com.vn">Dân Trí</a>
+        <!-- thẻ ul và li -->
+        <ul>
+            <li>Học để bớt ngu</li>
+            <li>Ngu để bớt học</li>
+        </ul>
+        <!-- thẻ table -->
+        <table>
+            <thead>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Địa chỉ
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>name1</td>
+                    <td>HCM</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>name2</td>
+                    <td>HCM</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>name3</td>
+                    <td>HCM</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <!-- Absolute unit -->
+        <!-- <style>
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+        </style>
+         -->
+
+        <!-- Relative unit -->
+        <!-- % -->
+        <!-- <style>
+            .box {
+                width: 50%;
+                height: 100px;
+                background-color: red;
+            }
+        </style> -->
+
+        <!-- rem , em -->
+        <!-- <style>
+            html {
+                font-size: 40px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        </style> -->
+
+        <!--  em -->
+        <!-- <style>
+            html {
+                font-size: 40px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        </style> -->
+
+        <!-- vh,vw -->
+         <!-- <style>
+            html {
+                font-size: 40px;
+            }
+            .box {
+                width: 50%;
+                height: 100px;
+                background-color: red;
+            }
+        </style>
+        <div class="box"> 
+            <p style="color: white;">hello</p>
+        </div> -->
+
+
+        
+     
+    </body>
+
+</html>
